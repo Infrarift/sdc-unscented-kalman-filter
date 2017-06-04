@@ -1,4 +1,3 @@
-#include <iostream>
 #include "tools.h"
 
 using Eigen::VectorXd;
@@ -42,7 +41,5 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 
 double Tools::NormalizeAngleAroundPi(double input_angle)
 {
-	// TODO: Optimize this part.
-	auto new_angle = atan2(sin(input_angle), cos(input_angle));
-	return new_angle;
+	return atan2(sin(input_angle), cos(input_angle));
 }

@@ -5,5 +5,5 @@ class Transformer
 {
 public:
 	virtual ~Transformer() = default;
-	virtual void Transformer::Convert(Entity& origin, Entity& target) = 0;
+	virtual void Convert(Entity& origin, Entity& target) = 0;
 };

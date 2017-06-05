@@ -5,5 +5,5 @@ class CTRVToRadarTransformer : public Transformer
 {
 public:
 	CTRVToRadarTransformer();
-	void CTRVToRadarTransformer::Convert(Entity& origin, Entity& target) override;
+	void Convert(Entity& origin, Entity& target) override;
 };

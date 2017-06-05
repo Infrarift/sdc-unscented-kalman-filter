@@ -22,14 +22,14 @@ public:
 	void NormalizeAngles();
 	void Reset();
 
-	void Entity::SetNoise(double noise[]);
-	void Entity::AddNormalizationIndex(int index);
-	Eigen::MatrixXd Entity::GetNoiseMatrix();
-	Eigen::VectorXd Entity::GetNoiseVector();
-	void Entity::PrintNIS();
+	void SetNoise(double noise[]);
+	void AddNormalizationIndex(int index);
+	Eigen::MatrixXd GetNoiseMatrix();
+	Eigen::VectorXd GetNoiseVector();
+	void PrintNIS();
 
 private:
-	void Entity::Initialize(int dimensions, int n_sigma);
+	void Initialize(int dimensions, int n_sigma);
 	Eigen::VectorXd noise_vector_;
 	Eigen::MatrixXd noise_matrix_;
 	std::vector<int> normalize_index_;
